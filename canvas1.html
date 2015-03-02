@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tecnologias Multimédia</title>
+<script>
+
+	function draw() {
+
+		var canvas = document.getElementById("mycanvas");
+
+		if (canvas.getContext) {
+			var ctx = canvas.getContext('2d');
+
+			// desenhar a partir daqui
+
+// Rectângulo vazio
+			// para começar a desenhar
+			// agarra a caneta
+			ctx.beginPath();
+			// primeiro ponto onde queremos o primeiro ponto
+			// move o braço para este ponto
+			ctx.moveTo(290, 290);
+			// faz uma linha até este ponto
+			ctx.lineTo(290, 50);
+			ctx.lineTo(50, 290);
+			ctx.closePath();
+
+			// só desenha o que dissemos para ele fazer
+			// acima com esta instrução
+			ctx.stroke();
+
+
+// Rectângulo verde
+			ctx.beginPath();
+			ctx.fillStyle="#BADA55";
+			ctx.moveTo(10, 10);
+			ctx.lineTo(250, 10);
+			ctx.lineTo(10, 250);
+			// o fill faz o closePath() e o stroke()
+			// e ainda lhe preenche o interior
+			ctx.fill();
+
+
+		}
+	}
+
+</script>
+<style>
+	canvas{
+		border: 2px solid black;
+	}
+</style>
+</head>
+<body onload="draw();">
+	<canvas id="mycanvas" width="300" height="300"></canvas>
+</body>
+</html>

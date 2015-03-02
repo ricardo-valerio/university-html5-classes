@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tecnologias Multimédia</title>
+<script>
+
+	function draw() {
+
+		var canvas = document.getElementById("mycanvas");
+
+		if (canvas.getContext) {
+			var ctx = canvas.getContext('2d');
+
+			// desenhar a partir daqui
+
+	// Rectângulo vermelho
+			// cor com que irá pintar (rgb/rgba/hex/webColors)
+			ctx.fillStyle = "rgb(200, 0, 0)";
+			// os primeiros dois: coordenadas do vértice superior esquerdo
+			// os últimos dois: são a distância percorrida a partir dos primeiros dois
+			ctx.fillRect(10, 10, 200, 200);
+
+
+	// Rectângulo azul
+			ctx.fillStyle = "rgba(0, 0, 200, 0.5)";
+			ctx.fillRect(90, 90, 200, 200);
+
+	// Rectângulo verde
+			ctx.fillStyle = "rgba(0, 200, 100, 0.8)";
+			ctx.fillRect(100, 100, 100, 100);
+
+
+		}
+	}
+
+</script>
+<style>
+	canvas{
+		border: 2px solid black;
+	}
+</style>
+</head>
+<body onload="draw();">
+	<canvas id="mycanvas" width="300" height="300"></canvas>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tecnologias Multimédia</title>
+<script>
+
+	function draw() {
+
+		var canvas = document.getElementById("mycanvas");
+
+		if (canvas.getContext) {
+			var ctx = canvas.getContext('2d');
+
+			// desenhar a partir daqui
+
+            var x1   = document.getElementById("x1").value;
+            var y1   = document.getElementById("y1").value;
+            var comp = document.getElementById("comp").value;
+            var altu = document.getElementById("altu").value;
+            var prof = document.getElementById("prof").value;
+
+            ctx.beginPath();
+            ctx.strokeStyle = "red";
+            ctx.lineWith = 2;
+            // desenha rectângulo sem preenchimento
+            // ao contrário do que o fillRect() faz
+            ctx.rect(x1, y1, comp, altu);
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.stokeStyle = "green";
+            ctx.fillStyle = "green";
+            ctx.lineWidth = 2;
+            ctx.rect(x1 - prof, y1 - prof, comp, altu);
+            ctx.fill();
+		}
+	}
+
+</script>
+<style>
+	canvas{
+		border: 2px solid black;
+	}
+</style>
+</head>
+<body onload="draw();">
+	<h1>Canvas - Formas Básicas</h1>
+
+	<label for="x1">x</label>
+	<input type="number" id="x1" value="100">
+	<label for="y1">y</label>
+	<input type="number" id="y1" value="100">
+
+	<br>
+	<label for="comp">comprimento</label>
+	<input type="number" id="comp" value="50">
+
+	<label for="altu">altura</label>
+	<input type="number" id="altu" value="50">
+
+	<label for="prof">profundidade</label>
+	<input type="number" id="prof" value="25">
+	<br>
+	<button id="desenha" onclick="draw()">desenhar</button>
+
+	<br>
+<hr>
+	<br>
+	<canvas id="mycanvas" width="300" height="300"></canvas>
+</body>
+</html>
