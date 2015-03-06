@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tecnologias Multimédia</title>
+    <script>
+
+        function draw() {
+
+            var canvas = document.getElementById("mycanvas");
+
+            if (canvas.getContext) {
+                var ctx = canvas.getContext('2d');
+
+                // desenhar a partir daqui
+
+                for(var i = 0; i < 12; i++ ){
+                    for(var j = 0; j < 12; j++ ){
+                        ctx.strokeStyle = "rgb(" + Math.floor(255 - 21.5 * i) +
+                        ", " + Math.floor(255 - 21.5 * j) + ", 0)";
+
+                        ctx.beginPath();
+                        ctx.arc(12.5 + j * 25, 12.5 + i * 25, 10, 0, 2 *
+                        Math.PI, true );
+                        ctx.stroke();
+
+                    }
+                }
+
+            }
+        }
+
+    </script>
+    <style>
+        canvas{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body onload="draw();">
+
+<canvas id="mycanvas" width="300" height="300"></canvas>
+</body>
+</html>

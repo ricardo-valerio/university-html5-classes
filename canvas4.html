@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tecnologias Multimédia</title>
+    <script>
+
+        function draw() {
+
+            var canvas = document.getElementById("mycanvas");
+
+            if (canvas.getContext) {
+                var ctx = canvas.getContext('2d');
+
+                // desenhar a partir daqui
+                ctx.beginPath();
+
+    // curva quadrática
+
+                // vai para o ponto onde começa a desenhar
+                ctx.moveTo(250, 250);
+
+                // ponto de atracção (25, 25)
+                // ponto onde acaba (50, 250)
+                ctx.quadraticCurveTo(25, 25, 50, 250);
+
+
+    // curva de bezier
+
+                // vai para o ponto onde começa a desenhar
+                ctx.moveTo(10, 100);
+
+                // ponto de atracção (25, 25)
+                // ponto onde acaba (50, 250)
+                ctx.bezierCurveTo(150, 0, 175, 300, 290, 150);
+
+
+
+                ctx.stroke();
+            }
+        }
+
+    </script>
+    <style>
+        canvas{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body onload="draw();">
+
+<canvas id="mycanvas" width="300" height="300"></canvas>
+</body>
+</html>

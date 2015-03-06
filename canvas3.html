@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tecnologias Multimédia</title>
+    <script>
+
+        function draw() {
+
+            var canvas = document.getElementById("mycanvas");
+
+            if (canvas.getContext) {
+                var ctx = canvas.getContext('2d');
+
+                // desenhar a partir daqui
+                ctx.beginPath();
+
+                /**
+                 * x e y -> centro da circunferência,
+                 * raio,
+                 * onde começa o ângulo,
+                 * onde acaba o ângulo,
+                 * sentido do relógio ou não
+                 */
+                ctx.arc(150, 150, 100, 0, 2 * Math.PI, true);
+
+                ctx.moveTo(130, 130);
+                ctx.arc(120, 130, 10, 0, 2 * Math.PI, true);
+
+                ctx.moveTo(190, 130);
+                ctx.arc(180, 130, 10, 0, 2 * Math.PI, true);
+
+                ctx.moveTo(220, 150);
+                ctx.arc(150, 150, 70, 0, Math.PI, false);
+
+                ctx.stroke();
+            }
+        }
+
+    </script>
+    <style>
+        canvas{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body onload="draw();">
+
+<canvas id="mycanvas" width="300" height="300"></canvas>
+</body>
+</html>
