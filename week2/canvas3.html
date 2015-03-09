@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tecnologias Multimédia</title>
+    <script>
+
+        function draw() {
+
+            var canvas = document.getElementById("mycanvas");
+
+            if (canvas.getContext) {
+                var ctx = canvas.getContext('2d');
+
+                // desenhar a partir daqui
+
+                ctx.drawImage( document.getElementById("source"), 23, 81,
+                        104, 124, 106, 98, 87, 104 );
+                ctx.drawImage( document.getElementById("frame"), 85, 77 );
+
+            }
+        }
+
+    </script>
+    <style>
+        canvas{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body onload="draw();">
+
+<canvas id="mycanvas" width="300" height="300"></canvas>
+
+<img id="source" src="elefante.jpg" alt="elefante" width="300" height="227"
+     style="display: none;" />
+
+<img id="frame" src="moldura.png" alt="moldura" width="132" height="150" style="display: none;" />
+
+
+</body>
+</html>

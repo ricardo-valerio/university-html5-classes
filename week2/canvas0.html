@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tecnologias Multimédia</title>
+    <script>
+
+        function draw() {
+
+            var canvas = document.getElementById("mycanvas");
+
+            if (canvas.getContext) {
+                var ctx = canvas.getContext('2d');
+
+                // desenhar a partir daqui
+                var linear_gradient = ctx.createLinearGradient(0, 0, 0, 300);
+                linear_gradient.addColorStop(0, "#00ABEB");
+                linear_gradient.addColorStop(0.5, "#FFF");
+                linear_gradient.addColorStop(0.5, "#6C0");
+                linear_gradient.addColorStop(1, "#FFF");
+
+                ctx.fillStyle = linear_gradient;
+                ctx.fillRect(10, 10, 280, 280);
+
+            }
+        }
+
+    </script>
+    <style>
+        canvas{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body onload="draw();">
+
+<canvas id="mycanvas" width="300" height="300"></canvas>
+</body>
+</html>
