@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tecnologias Multimédia</title>
+	<script>
+
+		function draw() {
+
+			var canvas = document.getElementById("mycanvas");
+
+			if (canvas.getContext) {
+				var ctx = canvas.getContext('2d');
+
+				// desenhar a partir daqui
+
+				ctx.font = "50px operating instructions";
+				ctx.textAlign = "center";
+//				ctx.fillText("Sexta-Feira", 25, 100);
+				ctx.fillText("Sexta-Feira", canvas.width / 2, canvas.height /
+				3);
+
+				var gradiente = ctx.createLinearGradient(0, 0, 300, 300);
+				gradiente.addColorStop(0, "blue");
+				gradiente.addColorStop(0.5, "green");
+				gradiente.addColorStop(1, "red");
+				ctx.fillStyle = gradiente;
+
+				ctx.font = "40px GoodDog";
+				ctx.textAlign = "center";
+				ctx.textBaseline = "middle";
+//				ctx.fillText("Quase fim de semana", 20, 170);
+				var text = "Quase fim de semana";
+				var tamanho = ctx.measureText(text);
+				var comprimento = tamanho.width;
+				var altura = tamanho.height;
+
+				ctx.fillText(text, canvas.width / 2,
+						canvas.height
+				/ 2);
+				ctx.fillText(comprimento, canvas.width / 2,
+						canvas.height
+						/ 2 + 20);
+
+			}
+		}
+
+	</script>
+	<style>
+		canvas{
+			border: 2px solid black;
+		}
+	</style>
+</head>
+<body onload="draw();">
+
+<canvas id="mycanvas" width="300" height="300"></canvas>
+
+</body>
+</html>
