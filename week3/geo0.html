@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+<div id="info"></div>
+
+<script>
+
+	function getInfo(loc) {
+		var latitude  = loc.coords.latitude,
+		    longitude = loc.coords.longitude,
+		    altitude  = loc.coords.altitude,
+		    accuracy  = loc.coords.accuracy,
+		    heading   = loc.coords.heading,
+		    speed     = loc.coords.speed,
+		    ala       = loc.coords.altitudeAccuracy;
+
+		var info = document.getElementById("info");
+		var inner = "<strong>Você está aqui:</strong><br/>"
+				+ "Latitude: "      +  latitude  + "<br>"
+				+ "Longitude: "     +  longitude + "<br>"
+				+ "Altitude: "      +  altitude  + "<br>"
+				+ "Erro: "          +  accuracy  + "<br>"
+				+ "Erro Altitude: " +  heading   + "<br>"
+				+ "Virado para (a partir de norte): " + speed + "<br>"
+				+ "À velocidade de: " +  ala + "<br>";
+
+		info.innerHTML = inner;
+	}
+
+	function handleError(err) {
+		switch (err.code){
+			case err.PERMISSION_DENIED:
+				alert("Não deu permissão");
+			break;
+			case err.POSITION_UNAVAILABLE:
+				alert("Não foi possível detectar a sua location");
+			break;
+			case err.TIMEOUT:
+				alert("Expirou o tempo");
+			break;
+			default:
+				alert("Ocorreu um erro");
+		}
+
+	}
+
+	if(navigator.geolocation){
+
+		navigator.geolocation.getCurrentPosition(getInfo, handleError);
+
+	}else{
+
+		alert("O seu browser não suporta geolocation");
+
+	}
+</script>
+
+</body>
+</html>
