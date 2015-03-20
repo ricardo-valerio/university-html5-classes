@@ -18,12 +18,24 @@
 
 		var currentPosition = new google.maps.LatLng(latitude, longitude);
 		var options = {
-			zoom : 8,
-			center: { lat: latitude, lng: longitude},
+			zoom : 16,
+			center: currentPosition,
 			mapTypeId : google.maps.MapTypeId.ROADMAP
 		};
 
 		var map = new google.maps.Map(document.getElementById("mapa"), options);
+
+		var marker = new google.maps.Marker({
+			position: currentPosition,
+			draggable: true,
+			animation: google.maps.Animation.DROP,
+			map: map
+		});
+
+		var infowindow = new google.maps.InfoWindow({
+			content: "Estou aqui!"
+		});
+		infowindow.open(map, marker);
 
 	}
 
@@ -45,13 +57,9 @@
 	}
 
 	if(navigator.geolocation){
-
 		navigator.geolocation.getCurrentPosition(getInfo, handleError);
-
 	}else{
-
 		alert("O seu browser não suporta geolocation");
-
 	}
 </script>
 

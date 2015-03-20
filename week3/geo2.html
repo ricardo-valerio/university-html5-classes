@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+<div id="mapa" style="height: 500px;"></div>
+
+
+<script src="http://maps.googleapis.com/maps/api/js?v=3"></script>
+
+<script>
+
+	var locations = [
+		["Castelo Rodrigo", 40.8858949, -6.9629744, 1, "<a href=''>C.A</a>"],
+		["Almeida", 40.7302057, -6.9042312, 2, "<a href=''>C.B</a>"],
+		["Penedono", 40.7751678, -7.3526689, 3, "<a href=''>C.C</a>"]
+	];
+
+	function getInfo(loc) {
+
+		var options = {
+			zoom : 10,
+			center: {lat: 40.7302057, lng: -6.9042312},
+			mapTypeId : google.maps.MapTypeId.ROADMAP
+		};
+
+		var map = new google.maps.Map(document.getElementById("mapa"), options);
+
+		setMarkers(map, locations);
+
+	}
+
+
+	function setMarkers(map, locations) {
+		var image = {
+			url: "http://upload.wikimedia.org/wikipedia/commons/3/3e/Grey_castle_icon.svg",
+			size: new google.maps.Size(30,30),
+			origin: new google.maps.Point(0,0),
+			anchor: new google.maps.Point(0,30)
+		};
+
+		var shape = {
+			coord: [1, 1, 1, 20, 18, 20, 18, 1],
+			type: "poly"
+		};
+
+		for(var i = 0; i < locations.length; i++){
+			var myLatLng = new google.maps.LatLng(locations[i][1],
+					locations[i][2]);
+			var marker = new google.maps.Marker({
+				position: myLatLng,
+				map: map,
+				icon: image,
+				shape: shape,
+				title: locations[i][0],
+				zIndez: locations[i][3]
+			});
+
+			var infoWindow = new google.maps.InfoWindow(marker, i);
+
+			google.maps.event.addListener(marker, "click", function(){
+				return (){
+
+				}
+			})(marker,)
+		}
+
+	}
+
+	function handleError(err) {
+		switch (err.code){
+			case err.PERMISSION_DENIED:
+				alert("Não deu permissão");
+			break;
+			case err.POSITION_UNAVAILABLE:
+				alert("Não foi possível detectar a sua location");
+			break;
+			case err.TIMEOUT:
+				alert("Expirou o tempo");
+			break;
+			default:
+				alert("Ocorreu um erro");
+		}
+
+	}
+
+	if(navigator.geolocation){
+		navigator.geolocation.getCurrentPosition(getInfo, handleError);
+	}else{
+		alert("O seu browser não suporta geolocation");
+	}
+</script>
+
+</body>
+</html>
