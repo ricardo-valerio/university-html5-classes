@@ -1,0 +1,129 @@
+<!--
+torre de belem 38.691584,-9.215977
+mosteiro dos jerónimos  38.697891,-9.206704
+ponte 25 de abril 38.689633,-9.17711
+palacio da pena 38.7862887,-9.3920681
+-->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+	<title>Complex icons</title>
+	<style>
+		html, body, #map-canvas {
+			height: 100%;
+			margin: 0px;
+			padding: 0px
+		}
+	</style>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+	<script>
+
+		function initialize() {
+			var mapOptions = {
+				zoom: 10,
+				center: new google.maps.LatLng(38.691584,-9.215977)
+			}
+			var map = new google.maps.Map(document.getElementById('map-canvas'),
+					mapOptions);
+
+			setMarkers(map, places);
+		}
+
+
+		var places = [
+				['Torre de Belém',
+				 38.691584,
+				 -9.215977,
+				"images/torre-belem.jpg",
+				"images/markers/blue.png",
+				4,
+				"Texto da torre de belém"]
+			,
+				['Mosteiro dos Jerónimos',
+				38.697891,
+				-9.206704,
+				"images/mosteiro-dos-jeronimos.jpg",
+				"images/markers/pink.png",
+				5,
+				"texto do mosteiro dos jerónimos"]
+			,
+				['Ponte 25 de Abril',
+				38.689633,
+				-9.17711,
+				"images/ponte-25-abril.jpg",
+				"images/markers/white.png",
+				3,
+				"texto da ponte 25 de abril"]
+			,
+				['Palácio da Pena',
+				38.7862887,
+				-9.3920681,
+				"images/palacio-da-pena.jpg",
+				"images/markers/yellow.png",
+				2,
+				"texto do palácio da pena"]
+		];
+
+		function setMarkers(map, locations) {
+			var shape = {
+				coords: [1, 1, 1, 20, 18, 20, 18 , 1],
+				type: 'poly'
+			};
+			for (var i = 0; i < locations.length; i++) {
+				var place = locations[i];
+				var myLatLng = new google.maps.LatLng(place[1], place[2]);
+
+
+				var contentString =
+						'<div id="content">' +
+						'<div id="siteNotice">' + '</div>'+
+						'<h1 id="firstHeading" class="firstHeading">'+ place[0] + '</h1>'+
+						'<img src="'+ place[3] +'" alt="'+ place[0]
+						+'" height="100" width="100"/>'+
+						'<div id="bodyContent">'+ place[6] + '</div>' +
+						'</div>';
+
+				var marker = new google.maps.Marker({
+					position: myLatLng,
+					map: map,
+					icon: {
+						url: place[4],
+						size: new google.maps.Size(30, 30),
+						origin: new google.maps.Point(0,0),
+						anchor: new google.maps.Point(0, 30)
+					},
+					shape: shape,
+					title: place[0],
+					zIndex: place[5],
+					html: contentString
+				});
+
+				var infowindow = new google.maps.InfoWindow({
+					content: contentString,
+					maxWidth: 300
+				});
+
+				google.maps.event.addListener(marker, 'click', function() {
+					infowindow.setContent(this.html);
+					infowindow.open(map,this);
+				});
+
+			}
+
+		}
+
+		google.maps.event.addDomListener(window, 'load', initialize);
+
+	</script>
+</head>
+<body>
+<div id="map-canvas"></div>
+<img src="" alt=""/>
+</body>
+</html>
+
