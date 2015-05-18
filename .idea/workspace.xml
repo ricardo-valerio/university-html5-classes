@@ -2,10 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95dfdd21-f90c-4243-ad48-e69ddb35d103" name="Default" comment=":rocket:">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/week1/canvas2.html" afterPath="$PROJECT_DIR$/week1/canvas2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/week1/canvas3.html" afterPath="$PROJECT_DIR$/week1/canvas3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/week1/canvas4.html" afterPath="$PROJECT_DIR$/week1/canvas4.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/study-for-the-exam/draw_lines.html" afterPath="$PROJECT_DIR$/study-for-the-exam/draw_lines.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/study-for-the-exam/draw_circles.html" afterPath="$PROJECT_DIR$/study-for-the-exam/html5-Canvas/university-classes/week1/draw_circles.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/study-for-the-exam/draw_color_circles_in_loop.html" afterPath="$PROJECT_DIR$/study-for-the-exam/html5-Canvas/university-classes/week1/draw_color_circles_in_loop.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/study-for-the-exam/draw_color_squares_in_loop.html" afterPath="$PROJECT_DIR$/study-for-the-exam/html5-Canvas/university-classes/week1/draw_color_squares_in_loop.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/study-for-the-exam/draw_lines.html" afterPath="$PROJECT_DIR$/study-for-the-exam/html5-Canvas/university-classes/week1/draw_lines.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/study-for-the-exam/draw_quadratic_and_bezier_curves.html" afterPath="$PROJECT_DIR$/study-for-the-exam/html5-Canvas/university-classes/week1/draw_quadratic_and_bezier_curves.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/study-for-the-exam/draw_rectangles.html" afterPath="$PROJECT_DIR$/study-for-the-exam/html5-Canvas/university-classes/week1/draw_rectangles.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/study-for-the-exam/draw_rectangles_with_user_input_values.html" afterPath="$PROJECT_DIR$/study-for-the-exam/html5-Canvas/university-classes/week1/draw_rectangles_with_user_input_values.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/week1/canvas0.html" afterPath="$PROJECT_DIR$/classes/week1/canvas0.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/week1/canvas1.html" afterPath="$PROJECT_DIR$/classes/week1/canvas1.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/week1/canvas2.html" afterPath="$PROJECT_DIR$/classes/week1/canvas2.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/week1/canvas3.html" afterPath="$PROJECT_DIR$/classes/week1/canvas3.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/week1/canvas4.html" afterPath="$PROJECT_DIR$/classes/week1/canvas4.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/week1/canvas5.html" afterPath="$PROJECT_DIR$/classes/week1/canvas5.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/week1/canvas6.html" afterPath="$PROJECT_DIR$/classes/week1/canvas6.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/week2/canvas0.html" afterPath="$PROJECT_DIR$/classes/week2/canvas0.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/week2/canvas1.html" afterPath="$PROJECT_DIR$/classes/week2/canvas1.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/week2/canvas2.html" afterPath="$PROJECT_DIR$/classes/week2/canvas2.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/week2/canvas3.html" afterPath="$PROJECT_DIR$/classes/week2/canvas3.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/week2/canvas4.html" afterPath="$PROJECT_DIR$/classes/week2/canvas4.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/week2/canvas5.html" afterPath="$PROJECT_DIR$/classes/week2/canvas5.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/week2/canvas6.html" afterPath="$PROJECT_DIR$/classes/week2/canvas6.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/week2/canvas7.html" afterPath="$PROJECT_DIR$/classes/week2/canvas7.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/week2/elefante.jpg" afterPath="$PROJECT_DIR$/classes/week2/elefante.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/week2/fundo-grafico.png" afterPath="$PROJECT_DIR$/classes/week2/fundo-grafico.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/week2/moldura.png" afterPath="$PROJECT_DIR$/classes/week2/moldura.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/week2/wallpaper.png" afterPath="$PROJECT_DIR$/classes/week2/wallpaper.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/week3/geo0.html" afterPath="$PROJECT_DIR$/classes/week3/geo0.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/week3/geo1.html" afterPath="$PROJECT_DIR$/classes/week3/geo1.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/week3/geo2.html" afterPath="$PROJECT_DIR$/classes/week3/geo2.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/week3/geo3.html" afterPath="$PROJECT_DIR$/classes/week3/geo3.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/week3/geo4.html" afterPath="$PROJECT_DIR$/classes/week3/geo4.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/week3/geo5.html" afterPath="$PROJECT_DIR$/classes/week3/geo5.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/week4/geo0.html" afterPath="$PROJECT_DIR$/classes/week4/geo0.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/week4/images/markers/blue.png" afterPath="$PROJECT_DIR$/classes/week4/images/markers/blue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/week4/images/markers/pink.png" afterPath="$PROJECT_DIR$/classes/week4/images/markers/pink.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/week4/images/markers/white.png" afterPath="$PROJECT_DIR$/classes/week4/images/markers/white.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/week4/images/markers/yellow.png" afterPath="$PROJECT_DIR$/classes/week4/images/markers/yellow.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/week4/images/places/mosteiro-dos-jeronimos.jpg" afterPath="$PROJECT_DIR$/classes/week4/images/places/mosteiro-dos-jeronimos.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/week4/images/places/palacio-da-pena.jpg" afterPath="$PROJECT_DIR$/classes/week4/images/places/palacio-da-pena.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/week4/images/places/ponte-25-abril.jpg" afterPath="$PROJECT_DIR$/classes/week4/images/places/ponte-25-abril.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/week4/images/places/torre-belem.jpg" afterPath="$PROJECT_DIR$/classes/week4/images/places/torre-belem.jpg" />
     </list>
     <ignored path="university-html5-classes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,7 +62,28 @@
     <favorites_list name="university-html5-classes" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="draw_circles.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/study-for-the-exam/html5-Canvas/university-classes/week1/draw_circles.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.5555556">
+              <caret line="54" column="38" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="canvas0.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/classes/week1/canvas0.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.42680776">
+              <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -121,34 +179,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="university-html5-classes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="university-html5-classes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="week1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="university-html5-classes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="university-html5-classes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="study-for-the-exam" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -173,6 +203,9 @@
       <recent name="$PROJECT_DIR$/week2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/classes" />
+      <recent name="$PROJECT_DIR$/study-for-the-exam/html5-Canvas/university-classes/week1" />
+      <recent name="$PROJECT_DIR$/study-for-the-exam/html5-Canvas/university-classes" />
       <recent name="$PROJECT_DIR$/week1" />
     </key>
   </component>
@@ -233,7 +266,7 @@
     <frame x="-1" y="0" width="1368" height="743" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12881608" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30305287" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290653" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -270,112 +303,112 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/week2/canvas7.html">
+    <entry file="file://$PROJECT_DIR$/classes/week2/canvas7.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week1/canvas2.html">
+    <entry file="file://$PROJECT_DIR$/classes/week1/canvas2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week1/canvas3.html">
+    <entry file="file://$PROJECT_DIR$/classes/week1/canvas3.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week1/canvas2.html">
+    <entry file="file://$PROJECT_DIR$/classes/week1/canvas2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week1/canvas3.html">
+    <entry file="file://$PROJECT_DIR$/classes/week1/canvas3.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week1/canvas2.html">
+    <entry file="file://$PROJECT_DIR$/classes/week1/canvas2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week1/canvas3.html">
+    <entry file="file://$PROJECT_DIR$/classes/week1/canvas3.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week1/canvas2.html">
+    <entry file="file://$PROJECT_DIR$/classes/week1/canvas2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week1/canvas2.html">
+    <entry file="file://$PROJECT_DIR$/classes/week1/canvas2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week1/canvas3.html">
+    <entry file="file://$PROJECT_DIR$/classes/week1/canvas3.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week1/canvas4.html">
+    <entry file="file://$PROJECT_DIR$/classes/week1/canvas4.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week1/canvas5.html">
+    <entry file="file://$PROJECT_DIR$/classes/week1/canvas5.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week1/canvas6.html">
+    <entry file="file://$PROJECT_DIR$/classes/week1/canvas6.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week2/canvas1.html">
+    <entry file="file://$PROJECT_DIR$/classes/week2/canvas1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.5576925">
           <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week2/canvas2.html">
+    <entry file="file://$PROJECT_DIR$/classes/week2/canvas2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.480769">
           <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week2/canvas3.html">
+    <entry file="file://$PROJECT_DIR$/classes/week2/canvas3.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.25686812">
           <caret line="16" column="19" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
@@ -389,100 +422,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week2/canvas4.html">
+    <entry file="file://$PROJECT_DIR$/classes/week2/canvas4.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.888889">
           <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week2/canvas5.html">
+    <entry file="file://$PROJECT_DIR$/classes/week2/canvas5.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-22.222221">
           <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week2/canvas6.html">
+    <entry file="file://$PROJECT_DIR$/classes/week2/canvas6.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.446281">
           <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week2/canvas7.html">
+    <entry file="file://$PROJECT_DIR$/classes/week2/canvas7.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5192308">
           <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week3/geo0.html">
+    <entry file="file://$PROJECT_DIR$/classes/week3/geo0.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-31.333334">
           <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week3/geo4.html">
+    <entry file="file://$PROJECT_DIR$/classes/week3/geo4.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3553719">
           <caret line="18" column="69" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="69" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week3/geo3.html">
+    <entry file="file://$PROJECT_DIR$/classes/week3/geo3.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8016529">
           <caret line="51" column="14" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week3/geo2.html">
+    <entry file="file://$PROJECT_DIR$/classes/week3/geo2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.76859504">
           <caret line="66" column="22" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week3/geo1.html">
+    <entry file="file://$PROJECT_DIR$/classes/week3/geo1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.47107437">
           <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week3/geo5.html">
+    <entry file="file://$PROJECT_DIR$/classes/week3/geo5.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-21.333334">
           <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week4/images/markers/blue.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week4/geo0.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45454547">
-          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week2/canvas0.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.037037037">
-          <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week1/canvas0.html">
+    <entry file="file://$PROJECT_DIR$/classes/week4/images/markers/blue.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/week4/geo0.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4074074">
-          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.45454547">
+          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/week2/canvas0.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.037037037">
+          <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
           <folding />
         </state>
       </provider>
@@ -495,7 +524,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week1/canvas1.html">
+    <entry file="file://$PROJECT_DIR$/classes/week1/canvas1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.44444445">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
@@ -503,7 +532,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/study-for-the-exam/draw_rectangles_with_user_input_values.html">
+    <entry file="file://$PROJECT_DIR$/study-for-the-exam/html5-Canvas/university-classes/week1/draw_rectangles_with_user_input_values.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.3703704">
           <caret line="46" column="12" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
@@ -511,7 +540,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week1/canvas2.html">
+    <entry file="file://$PROJECT_DIR$/classes/week1/canvas2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.97354496">
           <caret line="54" column="45" selection-start-line="54" selection-start-column="45" selection-end-line="54" selection-end-column="45" />
@@ -519,7 +548,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week1/canvas3.html">
+    <entry file="file://$PROJECT_DIR$/classes/week1/canvas3.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.97354496">
           <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
@@ -527,15 +556,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/study-for-the-exam/draw_circles.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.555555">
-          <caret line="54" column="38" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/study-for-the-exam/draw_quadratic_and_bezier_curves.html">
+    <entry file="file://$PROJECT_DIR$/study-for-the-exam/html5-Canvas/university-classes/week1/draw_quadratic_and_bezier_curves.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14814815">
           <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
@@ -543,7 +564,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week1/canvas4.html">
+    <entry file="file://$PROJECT_DIR$/classes/week1/canvas4.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
           <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
@@ -551,7 +572,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/study-for-the-exam/draw_lines.html">
+    <entry file="file://$PROJECT_DIR$/study-for-the-exam/html5-Canvas/university-classes/week1/draw_lines.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
@@ -561,7 +582,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/study-for-the-exam/draw_color_squares_in_loop.html">
+    <entry file="file://$PROJECT_DIR$/study-for-the-exam/html5-Canvas/university-classes/week1/draw_color_squares_in_loop.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22222222">
           <caret line="31" column="52" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
@@ -569,7 +590,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/study-for-the-exam/draw_color_circles_in_loop.html">
+    <entry file="file://$PROJECT_DIR$/study-for-the-exam/html5-Canvas/university-classes/week1/draw_color_circles_in_loop.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5185185">
           <caret line="54" column="12" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
@@ -577,7 +598,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/study-for-the-exam/draw_rectangles.html">
+    <entry file="file://$PROJECT_DIR$/study-for-the-exam/html5-Canvas/university-classes/week1/draw_rectangles.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5185185">
           <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
@@ -585,18 +606,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week1/canvas6.html">
+    <entry file="file://$PROJECT_DIR$/classes/week1/canvas5.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6666667">
+        <state vertical-scroll-proportion="-0.44444445">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/week1/canvas6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6984127">
           <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week1/canvas5.html">
+    <entry file="file://$PROJECT_DIR$/study-for-the-exam/html5-Canvas/university-classes/week1/draw_circles.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.44444445">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="-2.5555556">
+          <caret line="54" column="38" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/week1/canvas0.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42680776">
+          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
           <folding />
         </state>
       </provider>
