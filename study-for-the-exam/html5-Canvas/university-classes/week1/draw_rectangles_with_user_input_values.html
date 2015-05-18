@@ -22,6 +22,28 @@
 			background-color: white;
 			border: 2px solid black;
 		}
+
+		div.left{
+			float: left;
+			width: 40%;
+			text-align: right;
+		}
+
+		div.left input{
+			margin: 2px;
+			text-align: center;
+		}
+
+		div.left button{
+			height: 30px;
+			width: 200px;
+			text-align: center;
+		}
+
+		div.rigth{
+			float: right;
+			width: 60%;
+		}
 	</style>
 <style>
 </style>
@@ -30,29 +52,41 @@
 	<div id="content">
 		<h1>Tecnologias Multimédia III</h1>
 
-		<label for="x1">x</label>
-		<input type="number" id="x1" value="100">
-		<label for="y1">y</label>
-		<input type="number" id="y1" value="100">
+		<div class="left">
 
-		<br>
-		<label for="comp">comprimento</label>
-		<input type="number" id="comp" value="50">
+			<label for="x1">x</label>
+			<input type="number" id="x1" value="100">
+			<br/>
 
-		<label for="altu">altura</label>
-		<input type="number" id="altu" value="50">
+			<label for="y1">y</label>
+			<input type="number" id="y1" value="100">
+			<br>
 
-		<label for="prof">profundidade</label>
-		<input type="number" id="prof" value="25">
-		<br>
-		<button id="desenha" onclick="draw()">desenhar</button>
+			<label for="comp">comprimento</label>
+			<input type="number" id="comp" value="50">
+			<br/>
 
-		<canvas id="myCanvas" width="960" height="360">
-			Wazup Dude! Your browser does not support the canvas element.
-			Are you using IE?! You souldn't broo! It's 2015!
-		</canvas>
-		<h4>Ricardo Valério</h4>
-		<h6>15/06/2015</h6>
+			<label for="altu">altura</label>
+			<input type="number" id="altu" value="50">
+			<br/>
+
+			<label for="prof">profundidade</label>
+			<input type="number" id="prof" value="25">
+			<br>
+
+			<div style="text-align: center; margin-top: 30px;">
+				<button id="desenha" onclick="draw()">desenhar</button>
+			</div>
+
+		</div>
+		<div class="rigth">
+			<canvas id="myCanvas" width="400" height="360">
+				Wazup Dude! Your browser does not support the canvas element.
+				Are you using IE?! You souldn't broo! It's 2015!
+			</canvas>
+			<h4>Ricardo Valério</h4>
+			<h6>15/06/2015</h6>
+		</div>
 	</div>
 </body>
 <script>
@@ -65,24 +99,27 @@
 		if (canvas.getContext) {
 			var ctx = canvas.getContext('2d');
 
-			// para limpar o rectangulo antes de desenha o próximo
+			// para limpar o rectangulo antes de desenhar o próximo
 			ctx.clearRect(0, 0, canvas.width, canvas.height);
 
 			// desenhar a partir daqui
+
 			var x1   = document.getElementById("x1").value;
 			var y1   = document.getElementById("y1").value;
 			var comp = document.getElementById("comp").value;
 			var altu = document.getElementById("altu").value;
 			var prof = document.getElementById("prof").value;
 
+	// Rectangulo Vermelho
 			ctx.beginPath();
 			ctx.strokeStyle = "red";
 			ctx.lineWith = 2;
 			// desenha rectângulo sem preenchimento
 			// ao contrário do que o fillRect() faz
-			ctx.rect(x1, y1, comp, altu);
+			ctx.rect(/*x*/ x1, /*y*/ y1, /*width*/ comp, /*height*/ altu);
 			ctx.stroke();
 
+	// Rectangulo Verde
 			ctx.beginPath();
 			ctx.stokeStyle = "green";
 			ctx.fillStyle = "green";
