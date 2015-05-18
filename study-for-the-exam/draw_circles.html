@@ -47,41 +47,25 @@
 			var ctx = canvas.getContext('2d');
 			// desenhar a partir daqui
 
-	// Desenhar uma linha
-			ctx.moveTo(/*x*/ canvas.width/2, /*y*/ 0); // ponto inicial
-			ctx.lineTo(/*x*/ canvas.width/2, /*y*/ canvas.height);// ponto final
-			ctx.stroke(); // cria uma linha recta entre os dois pontos
-
-
-	// Rectângulo vazio
-			// para começar a desenhar
-			// agarra a caneta
 			ctx.beginPath();
-			// primeiro ponto onde queremos o primeiro ponto
-			ctx.moveTo(290, 290); // move o braço para este ponto
-			ctx.lineTo(290, 50);  // faz uma linha até este ponto
 
-			ctx.lineTo(50, 290);
-			ctx.closePath();
+			ctx.arc( /*x*/ 150,
+					 /*y*/ 150,
+				  	 /*radius*/ 100,
+					 /*startAngle*/ 0,
+					 /*endAngle*/ 2 * Math.PI,
+					 /*anticlockwise*/ true);
 
-			// só desenha o que dissemos para ele fazer
-			// acima com esta instrução
-			ctx.stroke();
+			ctx.moveTo(/*x*/ 130, /*y*/ 130);
+			ctx.arc(120, 130, 10, 0, 2 * Math.PI, true);
 
-/*
+			ctx.moveTo(190, 130);
+			ctx.arc(180, 130, 10, 0, 2 * Math.PI, true);
 
-// Rectângulo verde
-			ctx.beginPath();
-			ctx.fillStyle="#BADA55";
-			ctx.moveTo(10, 10);
-			ctx.lineTo(250, 10);
-			ctx.lineTo(10, 250);
-			// o fill faz o closePath() e o stroke()
-			// e ainda lhe preenche o interior
-			ctx.fill();
+			ctx.moveTo(220, 150);
+			ctx.arc(150, 150, 70, 0, Math.PI, false);
 
-*/
-
+			ctx.stroke(); // desenha o circulo
 		}
 	}
 

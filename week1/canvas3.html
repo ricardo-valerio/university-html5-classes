@@ -15,16 +15,14 @@
                 // desenhar a partir daqui
                 ctx.beginPath();
 
-                /**
-                 * x e y -> centro da circunferência,
-                 * raio,
-                 * onde começa o ângulo,
-                 * onde acaba o ângulo,
-                 * sentido do relógio ou não
-                 */
-                ctx.arc(150, 150, 100, 0, 2 * Math.PI, true);
+                ctx.arc( /*x*/ 150,
+                         /*y*/ 150,
+                         /*radius*/ 100,
+                         /*startAngle*/ 0,
+                         /*endAngle*/ 2 * Math.PI,
+                         /*anticlockwise*/ true);
 
-                ctx.moveTo(130, 130);
+                ctx.moveTo(/*x*/ 130, /*y*/ 130);
                 ctx.arc(120, 130, 10, 0, 2 * Math.PI, true);
 
                 ctx.moveTo(190, 130);
@@ -33,7 +31,7 @@
                 ctx.moveTo(220, 150);
                 ctx.arc(150, 150, 70, 0, Math.PI, false);
 
-                ctx.stroke();
+                ctx.stroke(); // desenha o circulo
             }
         }
 

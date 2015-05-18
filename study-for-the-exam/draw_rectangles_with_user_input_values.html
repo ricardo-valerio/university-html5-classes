@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tecnologias Multimédia III</title>
+	<link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+	<style>
+		html body{
+			font-family: 'Press Start 2P', cursive;
+			background-color: darkslategray;
+			color: azure;
+		}
+		div#content{
+			width: 960px;
+			margin: 0 auto;
+			text-align: center;
+		}
+		h1{
+			color: crimson;
+		}
+		canvas{
+			background-color: white;
+			border: 2px solid black;
+		}
+	</style>
+<style>
+</style>
+</head>
+<body>
+	<div id="content">
+		<h1>Tecnologias Multimédia III</h1>
+
+		<label for="x1">x</label>
+		<input type="number" id="x1" value="100">
+		<label for="y1">y</label>
+		<input type="number" id="y1" value="100">
+
+		<br>
+		<label for="comp">comprimento</label>
+		<input type="number" id="comp" value="50">
+
+		<label for="altu">altura</label>
+		<input type="number" id="altu" value="50">
+
+		<label for="prof">profundidade</label>
+		<input type="number" id="prof" value="25">
+		<br>
+		<button id="desenha" onclick="draw()">desenhar</button>
+
+		<canvas id="myCanvas" width="960" height="360">
+			Wazup Dude! Your browser does not support the canvas element.
+			Are you using IE?! You souldn't broo! It's 2015!
+		</canvas>
+		<h4>Ricardo Valério</h4>
+		<h6>15/06/2015</h6>
+	</div>
+</body>
+<script>
+
+	window.onload = draw();
+
+	function draw() {
+		var canvas = document.getElementById("myCanvas");
+
+		if (canvas.getContext) {
+			var ctx = canvas.getContext('2d');
+
+			// para limpar o rectangulo antes de desenha o próximo
+			ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+			// desenhar a partir daqui
+			var x1   = document.getElementById("x1").value;
+			var y1   = document.getElementById("y1").value;
+			var comp = document.getElementById("comp").value;
+			var altu = document.getElementById("altu").value;
+			var prof = document.getElementById("prof").value;
+
+			ctx.beginPath();
+			ctx.strokeStyle = "red";
+			ctx.lineWith = 2;
+			// desenha rectângulo sem preenchimento
+			// ao contrário do que o fillRect() faz
+			ctx.rect(x1, y1, comp, altu);
+			ctx.stroke();
+
+			ctx.beginPath();
+			ctx.stokeStyle = "green";
+			ctx.fillStyle = "green";
+			ctx.lineWidth = 2;
+			ctx.rect(x1 - prof, y1 - prof, comp, altu);
+			ctx.fill();
+		}
+	}
+
+</script>
+</html>

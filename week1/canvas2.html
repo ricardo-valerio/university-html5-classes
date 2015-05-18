@@ -12,8 +12,10 @@
 		if (canvas.getContext) {
 			var ctx = canvas.getContext('2d');
 
-			// desenhar a partir daqui
+			// para limpar o rectangulo antes de desenha o próximo
+			ctx.clearRect(0, 0, canvas.width, canvas.height);
 
+			// desenhar a partir daqui
             var x1   = document.getElementById("x1").value;
             var y1   = document.getElementById("y1").value;
             var comp = document.getElementById("comp").value;

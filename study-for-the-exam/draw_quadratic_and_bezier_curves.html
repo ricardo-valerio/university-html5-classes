@@ -47,41 +47,28 @@
 			var ctx = canvas.getContext('2d');
 			// desenhar a partir daqui
 
-	// Desenhar uma linha
-			ctx.moveTo(/*x*/ canvas.width/2, /*y*/ 0); // ponto inicial
-			ctx.lineTo(/*x*/ canvas.width/2, /*y*/ canvas.height);// ponto final
-			ctx.stroke(); // cria uma linha recta entre os dois pontos
-
-
-	// Rectângulo vazio
-			// para começar a desenhar
-			// agarra a caneta
 			ctx.beginPath();
-			// primeiro ponto onde queremos o primeiro ponto
-			ctx.moveTo(290, 290); // move o braço para este ponto
-			ctx.lineTo(290, 50);  // faz uma linha até este ponto
 
-			ctx.lineTo(50, 290);
-			ctx.closePath();
+			// curva quadrática
 
-			// só desenha o que dissemos para ele fazer
-			// acima com esta instrução
-			ctx.stroke();
+			// vai para o ponto onde começa a desenhar
+			ctx.moveTo(250, 250);
 
-/*
+			// ponto de atracção (25, 25)
+			// ponto onde acaba (50, 250)
+			ctx.quadraticCurveTo(25, 25, 50, 250);
 
-// Rectângulo verde
-			ctx.beginPath();
-			ctx.fillStyle="#BADA55";
-			ctx.moveTo(10, 10);
-			ctx.lineTo(250, 10);
-			ctx.lineTo(10, 250);
-			// o fill faz o closePath() e o stroke()
-			// e ainda lhe preenche o interior
-			ctx.fill();
 
-*/
+			// curva de bezier
 
+			// vai para o ponto onde começa a desenhar
+			ctx.moveTo(10, 100);
+
+			// ponto de atracção (25, 25)
+			// ponto onde acaba (50, 250)
+			ctx.bezierCurveTo(150, 0, 175, 300, 290, 150);
+
+			ctx.stroke(); // desenha tudo o que foi dito para trás
 		}
 	}
 

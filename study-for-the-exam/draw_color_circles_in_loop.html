@@ -29,7 +29,7 @@
 <body>
 	<div id="content">
 		<h1>Tecnologias Multimédia III</h1>
-		<canvas id="myCanvas" width="960" height="360">
+		<canvas id="myCanvas" width="300" height="300">
 			Wazup Dude! Your browser does not support the canvas element.
 			Are you using IE?! You souldn't broo! It's 2015!
 		</canvas>
@@ -46,42 +46,18 @@
 		if (canvas.getContext) {
 			var ctx = canvas.getContext('2d');
 			// desenhar a partir daqui
+			for(var i = 0; i < 12; i++ ){
+				for(var j = 0; j < 12; j++ ){
+					ctx.strokeStyle = "rgb(" + Math.floor(255 - 21.5 * i) +
+							", " + Math.floor(255 - 21.5 * j) + ", 0)";
 
-	// Desenhar uma linha
-			ctx.moveTo(/*x*/ canvas.width/2, /*y*/ 0); // ponto inicial
-			ctx.lineTo(/*x*/ canvas.width/2, /*y*/ canvas.height);// ponto final
-			ctx.stroke(); // cria uma linha recta entre os dois pontos
+					ctx.beginPath();
+					ctx.arc(12.5 + j * 25, 12.5 + i * 25, 10, 0, 2 *
+							Math.PI, true );
+					ctx.stroke();
 
-
-	// Rectângulo vazio
-			// para começar a desenhar
-			// agarra a caneta
-			ctx.beginPath();
-			// primeiro ponto onde queremos o primeiro ponto
-			ctx.moveTo(290, 290); // move o braço para este ponto
-			ctx.lineTo(290, 50);  // faz uma linha até este ponto
-
-			ctx.lineTo(50, 290);
-			ctx.closePath();
-
-			// só desenha o que dissemos para ele fazer
-			// acima com esta instrução
-			ctx.stroke();
-
-/*
-
-// Rectângulo verde
-			ctx.beginPath();
-			ctx.fillStyle="#BADA55";
-			ctx.moveTo(10, 10);
-			ctx.lineTo(250, 10);
-			ctx.lineTo(10, 250);
-			// o fill faz o closePath() e o stroke()
-			// e ainda lhe preenche o interior
-			ctx.fill();
-
-*/
-
+				}
+			}
 		}
 	}
 
