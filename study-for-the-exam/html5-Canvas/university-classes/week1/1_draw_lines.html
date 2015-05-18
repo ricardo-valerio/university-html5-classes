@@ -50,10 +50,11 @@
 	// Desenhar uma linha
 			ctx.moveTo(/*x*/ canvas.width/2, /*y*/ 0); // ponto inicial
 			ctx.lineTo(/*x*/ canvas.width/2, /*y*/ canvas.height);// ponto final
+			ctx.strokeStyle = "blue"; // muda a cor da linha
 			ctx.stroke(); // cria uma linha recta entre os dois pontos
 
 
-	// Rectângulo vazio
+	// Poligno vazio
 			// para começar a desenhar
 			// agarra a caneta
 			ctx.beginPath();
@@ -62,25 +63,25 @@
 			ctx.lineTo(290, 50);  // faz uma linha até este ponto
 
 			ctx.lineTo(50, 290);
+			ctx.lineTo(70, 300);
+			// fecha o poligno criando uma linha
+			// automaticamente entre os dois pontos que estão abertos
 			ctx.closePath();
 
 			// só desenha o que dissemos para ele fazer
 			// acima com esta instrução
 			ctx.stroke();
 
-/*
 
-// Rectângulo verde
+// Poligno verde
 			ctx.beginPath();
-			ctx.fillStyle="#BADA55";
+			ctx.fillStyle = "#BADA55";
 			ctx.moveTo(10, 10);
 			ctx.lineTo(250, 10);
 			ctx.lineTo(10, 250);
 			// o fill faz o closePath() e o stroke()
 			// e ainda lhe preenche o interior
 			ctx.fill();
-
-*/
 
 		}
 	}
