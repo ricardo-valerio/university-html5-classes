@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95dfdd21-f90c-4243-ad48-e69ddb35d103" name="Default" comment=":rocket:">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/week1/canvas0.html" afterPath="$PROJECT_DIR$/week1/canvas0.html" />
-    </list>
+    <list default="true" id="95dfdd21-f90c-4243-ad48-e69ddb35d103" name="Default" comment=":rocket:" />
     <ignored path="university-html5-classes.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,6 +60,7 @@
         <option value="$PROJECT_DIR$/week3/geo5.html" />
         <option value="$PROJECT_DIR$/week4/geo0.html" />
         <option value="$PROJECT_DIR$/week1/canvas0.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -532,6 +531,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.111111">
           <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
