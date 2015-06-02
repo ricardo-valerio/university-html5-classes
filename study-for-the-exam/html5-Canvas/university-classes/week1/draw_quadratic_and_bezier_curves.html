@@ -47,28 +47,54 @@
 			var ctx = canvas.getContext('2d');
 			// desenhar a partir daqui
 
+
+
+            /* ======================== Start of Quadratic Curve ======================= */
 			ctx.beginPath();
 
-			// curva quadrática
+            // line color
+            ctx.strokeStyle = "red";
 
-			// vai para o ponto onde começa a desenhar
-			ctx.moveTo(250, 250);
+            // vai para o ponto onde começa a desenhar
+            ctx.moveTo(250, 250);
 
-			// ponto de atracção (25, 25)
-			// ponto onde acaba (50, 250)
-			ctx.quadraticCurveTo(25, 25, 50, 250);
+			// A quadratic Bézier curve requires two points.
+			// The first point is a control point that is used in the quadratic
+			// Bézier calculation and the second point is the ending point for
+			// the curve.
+			ctx.quadraticCurveTo( /*control-point: x */ 25,
+			                      /*control-point: y */ 25,
+			                      /*end-point: x */ 50,
+			                      /*end-point: y*/ 250);
+
+            ctx.stroke(); // desenha tudo o que foi dito para trás
+            ctx.closePath();
+            /* ======================== End of Quadratic Curve ======================= */
 
 
-			// curva de bezier
+            /* ======================== Start of Bezier Curve ======================= */
+            ctx.beginPath();
 
-			// vai para o ponto onde começa a desenhar
-			ctx.moveTo(10, 100);
+            // line color
+            ctx.strokeStyle = "green";
 
-			// ponto de atracção (25, 25)
-			// ponto onde acaba (50, 250)
-			ctx.bezierCurveTo(150, 0, 175, 300, 290, 150);
+            // vai para o ponto onde começa a desenhar
+            ctx.moveTo(10, 100);
+
+			// A cubic bezier curve requires three points.
+			// The first two points are control points that are used in
+			// the cubic Bézier calculation and the last point is
+			// the ending point for the curve.
+			ctx.bezierCurveTo(/*first-control-point: x */ 150,
+                              /*first-control-point: y */ 0,
+                              /*second-control-point: x */ 175,
+                              /*second-control-point: x */ 300,
+                              /*end-point: x */ 290,
+                              /*end-point: x */ 150);
 
 			ctx.stroke(); // desenha tudo o que foi dito para trás
+            ctx.closePath();
+            /* ======================== End of Bezier Curve ======================= */
 		}
 	}
 

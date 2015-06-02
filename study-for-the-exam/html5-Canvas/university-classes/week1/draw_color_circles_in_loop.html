@@ -49,8 +49,8 @@
 			for(var i = 0; i < 12; i++ ){
 				for(var j = 0; j < 12; j++ ){
 					ctx.strokeStyle = "rgb(" + Math.floor(255 - 21.5 * i) +
-							", " + Math.floor(255 - 21.5 * j) + ", 0)";
-
+                                        ", " + Math.floor(255 - 21.5 * j)
+                                             + ", 0)";
 					ctx.beginPath();
 					ctx.arc(12.5 + j * 25, 12.5 + i * 25, 10, 0, 2 *
 							Math.PI, true );
