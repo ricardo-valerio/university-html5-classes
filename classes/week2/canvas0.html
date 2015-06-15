@@ -12,10 +12,20 @@
             if (canvas.getContext) {
                 var ctx = canvas.getContext('2d');
 
+/*
+        Gradients can be used to fill rectangles, circles, lines, text, etc.
+        Shapes on the canvas are not limited to solid colors.
+        There are two different types of gradients:
+
+        createLinearGradient(x,y,x1,y1) - creates a linear gradient
+        createRadialGradient(x,y,r,x1,y1,r1) - creates a radial/circular gradient
+*/
+
                 // desenhar a partir daqui
                 var linear_gradient = ctx.createLinearGradient(0, 0, 0, 300);
                 linear_gradient.addColorStop(0, "#00ABEB");
                 linear_gradient.addColorStop(0.5, "#FFF");
+
                 linear_gradient.addColorStop(0.5, "#6C0");
                 linear_gradient.addColorStop(1, "#FFF");
 
